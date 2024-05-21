@@ -30,10 +30,24 @@ fun main() {
     val boolVariable = false;
     println(boolVariable::class)
 
+
     // 2. Inferência de tipos
     // No Kotlin, é possível inferir os tipos explicitamente.
 
     var otherText: String = "Outro texto"
     var price: Double = 5.5
-    var time: Int = 10
+    var discount: Float = 44.3f
+    var byte: Byte = 8      // inteiro de 8-bit
+    var short: Short = 16   // inteiro de 16-bit
+    var int: Int = 32       // inteiro de 32-bit
+    var long: Long = 64     // inteiro de 64-bit
+    var boolean: Boolean = true
+
+
+    // 3. Conversão de tipos
+
+    var media = 22
+    var resposta = media.toDouble()
+    println(resposta)
+
 }
